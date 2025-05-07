@@ -1,24 +1,17 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib  # gunakan pickle jika model disimpan dengan pickle
-
-st.write('Hi!')
+import joblib
 
 
-# Load model
+# Load model hanya sekali menggunakan cache
 @st.cache_resource
 def load_model():
     model = joblib.load('model/student_status_model.pkl')
     return model
 
-model = load_model()
 
-st.title("Akses Model Machine Learning")
-
-st.write("Model berhasil dimuat!")
-st.write(model)
-
+# Ambil input dari user
 def get_user_input():
     st.header("Masukkan Data Mahasiswa")
     curricular_units_2nd_sem_grade = st.number_input("Nilai Semester 2", min_value=0.0, max_value=20.0, step=0.1)
@@ -39,6 +32,7 @@ def get_user_input():
     return input_data
 
 
+# Prediksi status
 def predict_status(model, input_df):
     input_encoded = pd.get_dummies(input_df)
     input_encoded = input_encoded.reindex(columns=model.feature_names_in_, fill_value=0)
@@ -46,6 +40,7 @@ def predict_status(model, input_df):
     return prediction[0]
 
 
+# Tampilkan hasil prediksi
 def display_result(prediction):
     status_mapping = {0: "Dropout", 1: "Enrolled", 2: "Graduate"}
     predicted_label = status_mapping[prediction]
@@ -55,9 +50,13 @@ def display_result(prediction):
         st.success(f"Prediksi Status Mahasiswa: {predicted_label}")
 
 
+# Fungsi utama
 def main():
     st.title("Prediksi Status Mahasiswa (Dropout, Enrolled, Graduate)")
+    st.write("Model berhasil dimuat!")
     model = load_model()
+    st.write(model)
+
     user_input_df = get_user_input()
 
     if st.button("Prediksi"):
@@ -65,5 +64,5 @@ def main():
         display_result(prediction)
 
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
