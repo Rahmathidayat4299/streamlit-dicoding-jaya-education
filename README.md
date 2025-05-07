@@ -55,11 +55,11 @@ Pembayaran uang kuliah tepat waktu.
 * Visualisasi:
 Distribusi data dan fitur penting divisualisasikan menggunakan matplotlib dan seaborn.
 ## Kesimpulan
-*Bagaimana cara memprediksi status mahasiswa secara akurat?
+* Bagaimana cara memprediksi status mahasiswa secara akurat?
 Jawaban: Dengan menggunakan model machine learning berbasis student_status_model.pkl, akurasi prediksi mencapai 76.72%.
 * Faktor apa saja yang memengaruhi status mahasiswa?
 Jawaban: Faktor utama adalah nilai semester 1 dan 2, jumlah mata kuliah yang lulus, dan pembayaran uang kuliah tepat waktu.
-*Bagaimana perusahaan dapat mengurangi tingkat dropout mahasiswa?
+* Bagaimana perusahaan dapat mengurangi tingkat dropout mahasiswa?
 Jawaban: Dengan memberikan intervensi dini berdasarkan hasil prediksi model.
 ## Rekomendasi Action Items
 * Meningkatkan Kualitas Data
