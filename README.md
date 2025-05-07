@@ -31,20 +31,8 @@ Cara Menginstal Dependensi
 Jalankan perintah berikut untuk menginstal semua dependensi:
 `` pip install -r requirements.txt ``
 ##  Business Dashboard
-##  Deskripsi Dashboard
-Dashboard interaktif dibuat menggunakan Streamlit untuk memvisualisasikan data dan hasil prediksi status mahasiswa. Dashboard ini memungkinkan pengguna untuk:
 
-1.  Melihat distribusi data berdasarkan fitur tertentu.
-2.  Melakukan prediksi status mahasiswa berdasarkan input data.
-## Cara Menjalankan Dashboard Di local
-1.  Pastikan semua dependensi telah diinstal.
-2.  Jalankan perintah berikut di terminal:<br>
-streamlit run app.py
-3.  Masukkan data mahasiswa pada form yang tersedia untuk mendapatkan prediksi status.
-## Akses ke  Solusi Machine Learning yang Siap Digunakan
-https://app-dicoding-jaya-educationgit-datascience.streamlit.app/ 
-## Link Dashboard
-Jika dashboard telah di-deploy, sertakan link di sini. Contoh:
+ dashboard telah di-deploy,  link di sini:
 Dashboard Prediksi Mahasiswa
 https://lookerstudio.google.com/reporting/12177a94-2abf-4168-8b1b-2dfd5acdb015
 
@@ -53,11 +41,10 @@ https://lookerstudio.google.com/reporting/12177a94-2abf-4168-8b1b-2dfd5acdb015
 * Pastikan semua dependensi telah diinstal menggunakan requirements.txt:
 ``` pip install -r requirements.txt ```
 * Jalankan aplikasi Streamlit:
-``` streamlit run app.py ```
+``` streamlit run streamlit_app.py ```
 * Masukkan data mahasiswa pada form yang tersedia untuk mendapatkan prediksi status.
-* Link Prototype
-Jika prototype telah di-deploy, sertakan link di sini. Contoh:
-Prototype Prediksi Mahasiswa
+* Link Prototype Akses ke  Solusi Machine Learning yang Siap Digunakan
+https://app-dicoding-jaya-educationgit-datascience.streamlit.app/ 
 
 Hasil dan Evaluasi
 * Akurasi Model: Model machine learning berhasil dilatih dengan akurasi 76.72% pada data uji.
@@ -68,9 +55,12 @@ Pembayaran uang kuliah tepat waktu.
 * Visualisasi:
 Distribusi data dan fitur penting divisualisasikan menggunakan matplotlib dan seaborn.
 ## Kesimpulan
-* Model machine learning dapat memprediksi status mahasiswa dengan akurasi yang cukup baik.
-* Faktor-faktor penting yang memengaruhi status mahasiswa telah diidentifikasi.
-* Dashboard interaktif memungkinkan pengguna untuk memvisualisasikan data dan melakukan prediksi status mahasiswa.
+*Bagaimana cara memprediksi status mahasiswa secara akurat?
+Jawaban: Dengan menggunakan model machine learning berbasis student_status_model.pkl, akurasi prediksi mencapai 76.72%.
+* Faktor apa saja yang memengaruhi status mahasiswa?
+Jawaban: Faktor utama adalah nilai semester 1 dan 2, jumlah mata kuliah yang lulus, dan pembayaran uang kuliah tepat waktu.
+*Bagaimana perusahaan dapat mengurangi tingkat dropout mahasiswa?
+Jawaban: Dengan memberikan intervensi dini berdasarkan hasil prediksi model.
 ## Rekomendasi Action Items
 * Meningkatkan Kualitas Data
 
