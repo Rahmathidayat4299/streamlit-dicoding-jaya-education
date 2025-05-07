@@ -36,14 +36,17 @@ Dashboard interaktif dibuat menggunakan Streamlit untuk memvisualisasikan data d
 
 1.  Melihat distribusi data berdasarkan fitur tertentu.
 2.  Melakukan prediksi status mahasiswa berdasarkan input data.
-## Cara Menjalankan Dashboard
+## Cara Menjalankan Dashboard Di local
 1.  Pastikan semua dependensi telah diinstal.
 2.  Jalankan perintah berikut di terminal:<br>
 streamlit run app.py
 3.  Masukkan data mahasiswa pada form yang tersedia untuk mendapatkan prediksi status.
+## Akses ke  Solusi Machine Learning yang Siap Digunakan
+https://app-dicoding-jaya-educationgit-datascience.streamlit.app/ 
 ## Link Dashboard
 Jika dashboard telah di-deploy, sertakan link di sini. Contoh:
 Dashboard Prediksi Mahasiswa
+https://lookerstudio.google.com/reporting/12177a94-2abf-4168-8b1b-2dfd5acdb015
 
 ## Menjalankan Sistem Machine Learning
 ## Cara Menjalankan Prototype
