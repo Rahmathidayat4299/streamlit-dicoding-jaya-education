@@ -35,7 +35,7 @@ Jalankan perintah berikut untuk menginstal semua dependensi:
 Dashboard telah di-deploy,  link di sini:
 https://lookerstudio.google.com/reporting/12177a94-2abf-4168-8b1b-2dfd5acdb015
 Dashboard Prediksi Mahasiswa 
-rahmathidayat9-dashboardjayaeducation
+
 ![rahmathidayat9-dashboardjayaeducation](image.png)
 
 
