@@ -33,7 +33,7 @@ Jalankan perintah berikut untuk menginstal semua dependensi:
 ##  Business Dashboard
 
 Dashboard telah di-deploy,  link di sini:
-https://lookerstudio.google.com/reporting/12177a94-2abf-4168-8b1b-2dfd5acdb015
+https://lookerstudio.google.com/reporting/bc0d6070-a0db-4880-908b-cc885d0526cd
 Dashboard Prediksi Mahasiswa 
 ![rahmathidayat9-Dashboard Jaya Education](./rahmathidayat9-dashboardjayaeducation.png)
 
